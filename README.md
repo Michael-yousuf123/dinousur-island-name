@@ -1,1 +1,1 @@
-# spam-classification
+# fashion-image-classification
