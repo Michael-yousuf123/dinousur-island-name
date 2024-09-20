@@ -1,6 +1,6 @@
 import os
 import numpy as np
-
+from config import *
 class DataCreation:
     """
     """

@@ -28,12 +28,14 @@ class RNN:
             h[t] = np.tanh(out)
             y[t] = softmax(np.dot(h[t], self.Wy)) + self.by
         return h, y, x
-    def backward():
+    def backward(self):
         pass
     def sample():
         pass
-    def loss():
-        pass 
+    def loss(self, y_hat, y_target):
+        """
+        """
+        return sum(-np.log(y_hat[t][y_target[t], 0] for t in range(len(self.X))))
     def update_parameter():
         pass 
     
